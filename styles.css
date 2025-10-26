@@ -1,0 +1,492 @@
+@font-face {
+    font-family: outward;
+    src: url(outward-block.ttf);
+}
+
+@font-face {
+    font-family: moglan;
+    src: url(Moglan_DEMO.ttf);
+}
+
+@font-face {
+    font-family: pp;
+    src: url(PPMori-SemiBold.otf);
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: gilroy-light;
+    src: url(Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: pp-l;
+    src: url(PPMori-Extralight.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(240, 213, 59);
+    z-index: 9;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+/* #purple{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    transition: all ease-out 1s;
+} */
+
+/* #soundon {
+    height: 15px;
+    width: 100px;
+    position: fixed;
+    background-color: rgb(159, 68, 243);
+    z-index: 9;
+    mix-blend-mode: normal;
+    transition: left linear 0.04s top linear 0.04s;
+} */
+
+#main {
+    background-color: #0F0D0D;
+    cursor: none;
+}
+
+#page1 {
+    min-height: 200vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;    
+    padding-top: 10vw;
+}
+
+#nav {
+    /* background-color: grey; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+    
+}
+
+#nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9vw;
+}
+
+#nav h4 {
+    font-size: 0.9vw;
+    font-family: gilroy;
+    letter-spacing: 1.5px;
+}
+
+#nav img {
+    height: 20px;
+}
+
+#circle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    /* font-size: 12px; */
+    font-weight: 100;
+}
+
+#nav h4:nth-child(1) {
+    border-bottom: 1.2px solid white;
+}
+
+#page1 h1 {
+    font-size: 8.6vw;
+    font-family: pp;
+}
+
+.first {
+    margin-left: 15vw;
+    /* margin-top: 10vw; */
+}
+
+.sec {
+    margin-left: 9vw;
+    
+}
+
+.sup {
+    width: 70%;
+}
+
+#page1 video {
+    width: 20%;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#page2 {
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: purple; */
+    padding: 110px 50px;
+    /* border-bottom: 1px solid rgb(43, 43, 43); */
+    position: relative;
+    z-index: 10;   
+}
+
+#page2 h1 {
+    font-size: 8vw;
+    font-weight: 400;
+    color: black;
+    font-family: gilroy;
+    padding-left: 50px;
+}
+
+.page2-cont {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 130px 0;
+    /* background-color: gray; */
+    font-family: gilroy;
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+#page2-left {
+    /* background-color: blue; */
+    padding: 0px 50px;
+    width: 50%;
+}
+
+#page2-right {
+    /* background-color: red; */
+    width: 30%;
+}
+
+#page2-left h2 {
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: gilroy-light;
+    color: black;
+}
+
+#page2-right p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: gilroy-light;
+    color: black;
+}
+
+#page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0px;
+    background-color: #EDBFFF;
+    color: black;
+    margin-top: 15px;
+}
+
+#page3 {
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+    position: relative;
+    z-index: 10;   
+}
+
+#fimg {
+    background-image: url(36875.jpg);
+    width: 500px;
+    height: 450px;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#simg {
+    background-image: url(3119724868.jpg);
+    width: 400px;
+    height: 570px;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+#page3 h1 {
+    color: black;
+    font-size: 100px;
+    font-family: gilroy;
+    padding-left: 55px;
+    font-weight: 200;
+}
+
+#page3-p1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+#fimg2 {
+    height: 500px;
+    width: 500px;
+    background-image: url(HEROSCREEN-WALLPAPER-72523RRE-min.webp);
+    background-size: cover;
+}
+
+#simg2 {
+    height: 500px;
+    width: 450px;
+    background-image: url(yoru-valorant-stealth-agent-pc-games-red-background-3840x2160-4121.png);
+    background-size: cover;
+}
+
+#page3-p2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 100px;
+}
+
+#page4 {
+    min-height: 150vh;
+    width: 100%;
+    /* background-color: gray; */
+    position: relative;
+    z-index: 10;   
+    padding: 100px 100px;
+}
+
+#page5 {
+    min-height: 130vh;
+    width: 100%;
+    /* background-color: gray; */
+    position: relative;
+    z-index: 10;
+    /* overflow: hidden; ensure absolutely positioned child is clipped to this area */
+    padding: 35px 100px;
+    /* background-color: goldenrod;    */
+    /* transition: all ease-out 1.5s; */
+    background-size: cover;
+}
+
+#page5 h3{
+    font-weight: 100;
+    font-family: pp-l;
+}
+
+#page5 h4{
+    font-family: pp-l;
+    font-weight: 100;
+}
+
+
+#page4 img {
+    height: 310px;
+    width: 300px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.elem h1 {
+    font-size: 7.5vw;
+}
+
+.text-div {
+    /* background-color: burlywood; */
+    height: 120px;
+    overflow: hidden;
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(3deg);
+}
+
+.elem img:nth-child(1){
+    left: -4%;
+}
+
+.elem img:nth-child(3){
+    right: -4%;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+}
+
+.elem h1 {
+    transition: all ease 0.4s;
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+.text-div h1:nth-child(2n){
+    color: rgb(250, 143, 250);
+}
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #dd87fe;
+    padding: 40px 50px;
+}
+
+
+
+#page5 h2{
+    font-size: 6vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#box {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 80px;
+    border-top: 1.3px solid rgb(255, 255, 255);
+}
+
+#box:nth-last-child(1){
+    border-bottom: 1.3px solid white;
+}
+
+#f1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-bottom: 90px;
+    /* background-color: grey; */
+}
+
+#f1 h1{
+    font-size: 7vw;
+}
+
+#f2{
+    /* padding: 20px 20px; */
+    border-radius: 50%;
+    background-color: white;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#f2 h4{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#f1 h1{
+    color: black;
+}
+
+.f33{
+    /* font-size: 16px; */
+    font-family: pp-l;
+    margin-right: 2.2vw;
+    /* padding-top: 7vh; */
+    /* margin-top: 1.5vh; */
+    margin-left: 2.8vw;
+    /* padding-bottom: 0.9vh; */
+}
+
+.f33 h4{
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 900;
+    font-family: gilroy;
+    /* font-style: bold; */
+    /* padding-bottom: 0.8vh; */
+}
+
+#f33{
+    display: flex;
+    align-items: center;
+    /* margin-top: 1vh; */
+    /* padding: 3vh 0; */
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+    background-color: #dd87fe;
+}
+
+#f3{
+    /* padding-top: 11vh; */
+    background-color: #2c2c2c;
+    height: 8vh;
+
+}
+
+.f33 h4:nth-child(2n){
+    font-size: 0.9vw;
+    font-weight: 100;
+}
+
+
+
+
+
+
